@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A03248371FA105EB0094C796 /* SentimentPolarity.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A03248361FA105EB0094C796 /* SentimentPolarity.mlmodel */; };
+		A04E04461FA35FDF00D4B1D1 /* SentimentPolarity.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A04E04451FA35FDF00D4B1D1 /* SentimentPolarity.mlmodel */; };
+		A04E04481FA3652100D4B1D1 /* ViewController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04E04471FA3652100D4B1D1 /* ViewController+Helper.swift */; };
 		A0C9209C1F992E1600E3EFF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C9209B1F992E1600E3EFF3 /* AppDelegate.swift */; };
 		A0C9209E1F992E1600E3EFF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C9209D1F992E1600E3EFF3 /* ViewController.swift */; };
 		A0C920A11F992E1600E3EFF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C9209F1F992E1600E3EFF3 /* Main.storyboard */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A03248361FA105EB0094C796 /* SentimentPolarity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SentimentPolarity.mlmodel; sourceTree = "<group>"; };
+		A04E04451FA35FDF00D4B1D1 /* SentimentPolarity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SentimentPolarity.mlmodel; sourceTree = "<group>"; };
+		A04E04471FA3652100D4B1D1 /* ViewController+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Helper.swift"; sourceTree = "<group>"; };
 		A0C920981F992E1600E3EFF3 /* CoreMLTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C9209B1F992E1600E3EFF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C9209D1F992E1600E3EFF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +60,12 @@
 			children = (
 				A0C9209B1F992E1600E3EFF3 /* AppDelegate.swift */,
 				A0C9209D1F992E1600E3EFF3 /* ViewController.swift */,
+				A04E04471FA3652100D4B1D1 /* ViewController+Helper.swift */,
 				A0C9209F1F992E1600E3EFF3 /* Main.storyboard */,
 				A0C920A21F992E1600E3EFF3 /* Assets.xcassets */,
 				A0C920A41F992E1600E3EFF3 /* LaunchScreen.storyboard */,
 				A0C920A71F992E1600E3EFF3 /* Info.plist */,
-				A03248361FA105EB0094C796 /* SentimentPolarity.mlmodel */,
+				A04E04451FA35FDF00D4B1D1 /* SentimentPolarity.mlmodel */,
 			);
 			path = CoreMLTestApp;
 			sourceTree = "<group>";
@@ -139,7 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03248371FA105EB0094C796 /* SentimentPolarity.mlmodel in Sources */,
+				A04E04481FA3652100D4B1D1 /* ViewController+Helper.swift in Sources */,
+				A04E04461FA35FDF00D4B1D1 /* SentimentPolarity.mlmodel in Sources */,
 				A0C9209E1F992E1600E3EFF3 /* ViewController.swift in Sources */,
 				A0C9209C1F992E1600E3EFF3 /* AppDelegate.swift in Sources */,
 			);
