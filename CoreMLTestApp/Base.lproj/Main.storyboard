@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreMLTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qCa-wT-MSS">
+                                <rect key="frame" x="44" y="309" width="287" height="155"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qCa-wT-MSS" secondAttribute="height" multiplier="287:155" id="N6p-MR-nlH"/>
+                                    <constraint firstAttribute="width" constant="287" id="m5v-42-Lga"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gLm-Ux-Cqw">
+                                <rect key="frame" x="67" y="20" width="240" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gLm-Ux-Cqw" secondAttribute="height" multiplier="80:77" id="IvQ-S0-iF7"/>
+                                    <constraint firstAttribute="width" constant="240" id="XPi-97-T7h"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCH-Lw-6eu">
+                                <rect key="frame" x="104" y="472" width="166" height="30"/>
+                                <color key="backgroundColor" red="0.8407756979695431" green="0.8407756979695431" blue="0.8407756979695431" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NCH-Lw-6eu" secondAttribute="height" multiplier="83:15" id="WnN-n9-XSd"/>
+                                    <constraint firstAttribute="width" constant="166" id="lu5-vX-Ncm"/>
+                                </constraints>
+                                <state key="normal" title="Submit Review"/>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GvR-cL-44v"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What did you think?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5H-ee-MdP">
+                                <rect key="frame" x="75" y="259" width="224" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q5H-ee-MdP" secondAttribute="height" multiplier="16:3" id="1S2-RA-A7e"/>
+                                    <constraint firstAttribute="width" constant="224" id="hhT-Df-djV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94126744923857864" green="0.94126744923857864" blue="0.94126744923857864" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="gLm-Ux-Cqw" secondAttribute="top" id="7vR-fM-CFk"/>
+                            <constraint firstItem="qCa-wT-MSS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="848-D3-Heq"/>
+                            <constraint firstItem="q5H-ee-MdP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Aak-56-wyU"/>
+                            <constraint firstItem="NCH-Lw-6eu" firstAttribute="top" secondItem="qCa-wT-MSS" secondAttribute="bottom" constant="8" id="AnU-SK-M5p"/>
+                            <constraint firstItem="gLm-Ux-Cqw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GFR-17-psS"/>
+                            <constraint firstItem="qCa-wT-MSS" firstAttribute="top" secondItem="q5H-ee-MdP" secondAttribute="bottom" constant="8" id="T7t-Vb-ZEm"/>
+                            <constraint firstItem="q5H-ee-MdP" firstAttribute="top" secondItem="gLm-Ux-Cqw" secondAttribute="bottom" constant="8" id="j1Z-CA-chJ"/>
+                            <constraint firstItem="NCH-Lw-6eu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="m4X-Wc-REW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="gLm-Ux-Cqw" id="eEb-SX-qQg"/>
+                        <outlet property="inputTextView" destination="qCa-wT-MSS" id="oGb-ho-wCa"/>
+                        <outlet property="questionLabel" destination="q5H-ee-MdP" id="arI-1M-gKj"/>
+                        <outlet property="submitButton" destination="NCH-Lw-6eu" id="AG7-bX-mMh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+</document>
